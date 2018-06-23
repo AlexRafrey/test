@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>vuesimple</title>
+	<style>
+		@font-face {
+		 font-family: 'Dusha'; 
+		 src: url(Dusha.ttf); /* Путь к файлу со шрифтом */
+		}
+		*{
+			box-sizing : border-box;
+			margin: 0;
+			padding: 0;
+		}
+			
+	</style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script src="dist/build.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="Player.js"></script>
+<script>
+$('#video').YTPlayer({
+	videoId: 'PUTutiUrJ2I',
+	fitToBackground: false,
+	modestbranding: 0,
+	autoplay: 1,
+	controls: 0,
+	showinfo: 0,
+	wmode: 'transparent',
+	branding: 0,
+	rel: 0,
+	autohide: 0,
+	origin: window.location.origin,
+	repeat: true,
+	disablekb: 0,
+	modestbranding: 1,
+});
+</script>
+</body>
+</html>
